@@ -1,0 +1,2 @@
+rootProject.name = "islearn_nav_proto"
+include ':app'

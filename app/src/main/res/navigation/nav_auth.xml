@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="ru.iandreyshev.islearn_nav_proto.OnboardingFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_urlFragmen"
+            app:destination="@id/urlFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/urlFragment"
+        android:name="ru.iandreyshev.islearn_nav_proto.UrlFragment"
+        android:label="Url"
+        tools:layout="@layout/fragment_url">
+        <action
+            android:id="@+id/action_urlFragmen_to_loginFragment"
+            app:destination="@id/loginFragmen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragmen"
+        android:name="ru.iandreyshev.islearn_nav_proto.LoginFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_login" />
+
+</navigation>
